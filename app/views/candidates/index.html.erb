@@ -1,0 +1,18 @@
+<% provide :my_title, "投票系統練習" %>
+<h1>投票系統練習</h1>
+
+<%= anna_link_to "新增候選人", new_candidate_path, "eye-open" %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <td>姓名</td>
+      <td>黨派</td>
+      <td>政見</td>
+      <td>得票數</td>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @candidates %>
+  </tbody>
+</table>
